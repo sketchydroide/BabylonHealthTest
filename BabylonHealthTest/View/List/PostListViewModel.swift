@@ -8,9 +8,9 @@ protocol PostListViewModelType {
 
 struct PostListViewModel: PostListViewModelType {
     private let asynStateSubject = BehaviorSubject<AsyncState<[PostModel]>>(value: .loading)
+    private let service: PostListServiceType
     
     let title: String = Titles.postList.rawValue
-    let service: PostListServiceType
     
     var asynStateObservable: Observable<AsyncState<[PostModel]>> {
         return asynStateSubject.asObservable()

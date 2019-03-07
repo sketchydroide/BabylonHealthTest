@@ -10,10 +10,10 @@ struct PostDetailViewModel: PostDetailViewModelType {
     private let commentsAsynStateSubject = BehaviorSubject<AsyncState<[CommentModel]>>(value: .loading)
     private let userAsynStateSubject = BehaviorSubject<AsyncState<UserModel>>(value: .loading)
     private let postModel: PostModel
+    private let userService: UserServiceType
+    private let commentsService: CommentsServiceType
     
     let title: String = Titles.postDetails.rawValue
-    let userService: UserServiceType
-    let commentsService: CommentsServiceType
     
     var asyncStateObservable: Observable<AsyncState<PostDetailsModel>> {
         return Observable.combineLatest(userAsynStateSubject.asObservable(), commentsAsynStateSubject.asObservable())
