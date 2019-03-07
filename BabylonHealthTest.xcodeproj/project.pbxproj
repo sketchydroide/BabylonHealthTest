@@ -10,7 +10,6 @@
 		0E241F7622145E8000172924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241F7522145E8000172924 /* AppDelegate.swift */; };
 		0E241F7D22145E8200172924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E241F7C22145E8200172924 /* Assets.xcassets */; };
 		0E241F8022145E8200172924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E241F7E22145E8200172924 /* LaunchScreen.storyboard */; };
-		0E241F8B22145E8200172924 /* BabylonHealthTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241F8A22145E8200172924 /* BabylonHealthTestTests.swift */; };
 		0E241F9822145EF000172924 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0E241F9722145EF000172924 /* Podfile */; };
 		0E241F9E22146C8200172924 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241F9D22146C8200172924 /* Coordinator.swift */; };
 		0E241FA3221480C700172924 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E241FA2221480C700172924 /* MainCoordinator.swift */; };
@@ -26,6 +25,8 @@
 		0E52499F22295FB300D6F692 /* PostDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E52499E22295FB300D6F692 /* PostDetailsModel.swift */; };
 		0E914A7C222D3A5A00F6EC73 /* PostListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E914A7B222D3A5A00F6EC73 /* PostListRepository.swift */; };
 		0E920C342231494C0065CB14 /* CommentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E920C332231494C0065CB14 /* CommentsRepository.swift */; };
+		0E920C3622317F110065CB14 /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E920C3522317F110065CB14 /* PostListViewModelTests.swift */; };
+		0E920C3922317FBB0065CB14 /* PostListServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E920C3822317FBB0065CB14 /* PostListServiceMock.swift */; };
 		0EAD75CC22157ECB00AB0712 /* PostListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD75CB22157ECB00AB0712 /* PostListService.swift */; };
 		0EAD75CE22157FE800AB0712 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD75CD22157FE800AB0712 /* RequestManager.swift */; };
 		0EBB09BD221C4BF200D423A5 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBB09BC221C4BF200D423A5 /* StringConstants.swift */; };
@@ -46,6 +47,7 @@
 		0EBB09DF221C869400D423A5 /* PostDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EBB09DE221C869400D423A5 /* PostDetailViewController.xib */; };
 		0EC3902F222FEF88001315E4 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC3902E222FEF88001315E4 /* Repository.swift */; };
 		0EC39031222FF019001315E4 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC39030222FF019001315E4 /* UsersRepository.swift */; };
+		BD5D2E1650437A7C6FCCFB06 /* Pods_BabylonHealthTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C18A524DFAB672E36CC48DF /* Pods_BabylonHealthTestTests.framework */; };
 		D0C73701F85BCB0957520AA3 /* Pods_BabylonHealthTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE47A90245A91D7E6CB3CDD /* Pods_BabylonHealthTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +69,6 @@
 		0E241F7F22145E8200172924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E241F8122145E8200172924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E241F8622145E8200172924 /* BabylonHealthTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonHealthTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E241F8A22145E8200172924 /* BabylonHealthTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabylonHealthTestTests.swift; sourceTree = "<group>"; };
 		0E241F8C22145E8200172924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E241F9722145EF000172924 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0E241F9D22146C8200172924 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -84,6 +85,8 @@
 		0E52499E22295FB300D6F692 /* PostDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsModel.swift; sourceTree = "<group>"; };
 		0E914A7B222D3A5A00F6EC73 /* PostListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRepository.swift; sourceTree = "<group>"; };
 		0E920C332231494C0065CB14 /* CommentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRepository.swift; sourceTree = "<group>"; };
+		0E920C3522317F110065CB14 /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
+		0E920C3822317FBB0065CB14 /* PostListServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListServiceMock.swift; sourceTree = "<group>"; };
 		0EAD75CB22157ECB00AB0712 /* PostListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListService.swift; sourceTree = "<group>"; };
 		0EAD75CD22157FE800AB0712 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		0EBB09BC221C4BF200D423A5 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
@@ -104,7 +107,10 @@
 		0EBB09DE221C869400D423A5 /* PostDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailViewController.xib; sourceTree = "<group>"; };
 		0EC3902E222FEF88001315E4 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		0EC39030222FF019001315E4 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
+		1CDA749E32D7F9629019ED56 /* Pods-BabylonHealthTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonHealthTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonHealthTestTests/Pods-BabylonHealthTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C18A524DFAB672E36CC48DF /* Pods_BabylonHealthTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabylonHealthTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE47A90245A91D7E6CB3CDD /* Pods_BabylonHealthTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabylonHealthTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC063676F0DE7F1E6FF5F170 /* Pods-BabylonHealthTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonHealthTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonHealthTestTests/Pods-BabylonHealthTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F97EBC36FE2C329620016405 /* Pods-BabylonHealthTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonHealthTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonHealthTest/Pods-BabylonHealthTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5D2E1650437A7C6FCCFB06 /* Pods_BabylonHealthTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +171,9 @@
 		0E241F8922145E8200172924 /* BabylonHealthTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E241F8A22145E8200172924 /* BabylonHealthTestTests.swift */,
+				0E920C3722317FAD0065CB14 /* Mocks */,
 				0E241F8C22145E8200172924 /* Info.plist */,
+				0E920C3522317F110065CB14 /* PostListViewModelTests.swift */,
 			);
 			path = BabylonHealthTestTests;
 			sourceTree = "<group>";
@@ -245,6 +253,14 @@
 			path = "Post Details";
 			sourceTree = "<group>";
 		};
+		0E920C3722317FAD0065CB14 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0E920C3822317FBB0065CB14 /* PostListServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		0EBB09BA221C175900D423A5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				2DE47A90245A91D7E6CB3CDD /* Pods_BabylonHealthTest.framework */,
+				2C18A524DFAB672E36CC48DF /* Pods_BabylonHealthTestTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -319,6 +336,8 @@
 			children = (
 				F97EBC36FE2C329620016405 /* Pods-BabylonHealthTest.debug.xcconfig */,
 				060840A6DE74ED3D5B8DBD7B /* Pods-BabylonHealthTest.release.xcconfig */,
+				CC063676F0DE7F1E6FF5F170 /* Pods-BabylonHealthTestTests.debug.xcconfig */,
+				1CDA749E32D7F9629019ED56 /* Pods-BabylonHealthTestTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -350,9 +369,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E241F9222145E8200172924 /* Build configuration list for PBXNativeTarget "BabylonHealthTestTests" */;
 			buildPhases = (
+				204EFFC867E5406611289894 /* [CP] Check Pods Manifest.lock */,
 				0E241F8222145E8200172924 /* Sources */,
 				0E241F8322145E8200172924 /* Frameworks */,
 				0E241F8422145E8200172924 /* Resources */,
+				84E78368A44D2457F2BE8429 /* [CP] Embed Pods Frameworks */,
+				2DB4038C9BE5760BA67BF7CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -425,6 +447,71 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		204EFFC867E5406611289894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BabylonHealthTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DB4038C9BE5760BA67BF7CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabylonHealthTestTests/Pods-BabylonHealthTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84E78368A44D2457F2BE8429 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BabylonHealthTestTests/Pods-BabylonHealthTestTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabylonHealthTestTests/Pods-BabylonHealthTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8DA53975C91C084D75280891 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -539,7 +626,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E241F8B22145E8200172924 /* BabylonHealthTestTests.swift in Sources */,
+				0E920C3622317F110065CB14 /* PostListViewModelTests.swift in Sources */,
+				0E920C3922317FBB0065CB14 /* PostListServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,8 +807,8 @@
 		};
 		0E241F9322145E8200172924 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC063676F0DE7F1E6FF5F170 /* Pods-BabylonHealthTestTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BabylonHealthTestTests/Info.plist;
@@ -739,8 +827,8 @@
 		};
 		0E241F9422145E8200172924 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDA749E32D7F9629019ED56 /* Pods-BabylonHealthTestTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BabylonHealthTestTests/Info.plist;

@@ -1,0 +1,6 @@
+framework module Pods_BabylonHealthTestTests {
+  umbrella header "Pods-BabylonHealthTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
