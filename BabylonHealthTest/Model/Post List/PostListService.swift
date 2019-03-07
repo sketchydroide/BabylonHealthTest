@@ -1,7 +1,7 @@
 import Foundation
 
 protocol PostListServiceType {
-    func refreshPosts(onCompletion completionHandler: @escaping (_ result: Result<[PostModel]>) -> ())
+    func refreshPosts(onCompletion completionHandler: @escaping (_ result: Result<[PostModel]>) -> Void)
 }
 
 struct PostListService: PostListServiceType {
@@ -17,7 +17,7 @@ struct PostListService: PostListServiceType {
         self.resource = resource
     }
 
-    func refreshPosts(onCompletion completionHandler: @escaping (_ result: Result<[PostModel]>) -> ()) {
+    func refreshPosts(onCompletion completionHandler: @escaping (_ result: Result<[PostModel]>) -> Void) {
         requestManager.makeNetworkCall(using: resource) { (result: Result<[PostModel]>) in
             switch result {
             case let .success(postList):

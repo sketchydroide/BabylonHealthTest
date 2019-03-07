@@ -1,11 +1,11 @@
 import Alamofire
 
 protocol RequestManagerType {
-    func makeNetworkCall<T: Decodable>(using resource: Resource, onCompletion completionHandler: @escaping (_ result: Result<T>) -> ())
+    func makeNetworkCall<T: Decodable>(using resource: Resource, onCompletion completionHandler: @escaping (_ result: Result<T>) -> Void)
 }
 
 final class RequestManager: RequestManagerType {
-    func makeNetworkCall<T: Decodable>(using resource: Resource, onCompletion completionHandler: @escaping (_ result: Result<T>) -> ()) {
+    func makeNetworkCall<T: Decodable>(using resource: Resource, onCompletion completionHandler: @escaping (_ result: Result<T>) -> Void) {
         do {
             try resource.makeRequest().validate()
                 .responseData(completionHandler: { response in

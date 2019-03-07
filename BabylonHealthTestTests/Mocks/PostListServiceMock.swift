@@ -13,7 +13,7 @@ final class PostListServiceMock: PostListServiceType {
     var mockError: TitledError?
     var mockPostList: [PostModel] = []
     
-    func refreshPosts(onCompletion completionHandler: @escaping (Result<[PostModel]>) -> ()) {
+    func refreshPosts(onCompletion completionHandler: @escaping (Result<[PostModel]>) -> Void) {
         if let error = mockError {
             completionHandler(.failure(error))
         } else {

@@ -25,20 +25,20 @@ extension RepositoryType {
     }
 }
 
-class Repository<T: Codable>: RepositoryType {
-    func loadValue() -> T? {
+class Repository<Value: Codable>: RepositoryType {
+    func loadValue() -> Value? {
         do {
             guard let data = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(Data(contentsOf: fullPath)) as? Data else {
                 fatalError("Failed to read from repository \(String(describing: self))")
             }
-            return try PropertyListDecoder().decode(T.self, from: data)
+            return try PropertyListDecoder().decode(Value.self, from: data)
         } catch {
             // If failed to read from repository or failed to parse I want to crash and let the developers know of a major issue that needs to be fixed
             fatalError("Failed to read from repository \(String(describing: self))")
         }
     }
 
-    func saveValue(value: T) {
+    func saveValue(value: Value) {
         do {
             let data = try PropertyListEncoder().encode(value)
             try NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: false)

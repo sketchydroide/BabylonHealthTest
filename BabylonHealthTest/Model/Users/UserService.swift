@@ -18,7 +18,7 @@ extension UserServiceError: TitledError {
 }
 
 protocol UserServiceType {
-    func fetchUser(with id: Int, onCompletion completionHandler: @escaping (_ result: Result<UserModel>) -> ())
+    func fetchUser(with id: Int, onCompletion completionHandler: @escaping (_ result: Result<UserModel>) -> Void)
 }
 
 struct UserService: UserServiceType {
@@ -31,7 +31,7 @@ struct UserService: UserServiceType {
         self.repository = repository
     }
 
-    func fetchUser(with id: Int, onCompletion completionHandler: @escaping (_ result: Result<UserModel>) -> ()) {
+    func fetchUser(with id: Int, onCompletion completionHandler: @escaping (_ result: Result<UserModel>) -> Void) {
         let resource = UsersResource(userId: id)
         requestManager.makeNetworkCall(using: resource) { (result: Result<[UserModel]>) in
             switch result {

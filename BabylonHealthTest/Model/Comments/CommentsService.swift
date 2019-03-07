@@ -1,7 +1,7 @@
 import Foundation
 
 protocol CommentsServiceType {
-    func fetchComments(for postId: Int, onCompletion completionHandler: @escaping (_ result: Result<[CommentModel]>) -> ())
+    func fetchComments(for postId: Int, onCompletion completionHandler: @escaping (_ result: Result<[CommentModel]>) -> Void)
 }
 
 struct CommentsService: CommentsServiceType {
@@ -14,7 +14,7 @@ struct CommentsService: CommentsServiceType {
         self.repository = repository
     }
 
-    func fetchComments(for postId: Int, onCompletion completionHandler: @escaping (_ result: Result<[CommentModel]>) -> ()) {
+    func fetchComments(for postId: Int, onCompletion completionHandler: @escaping (_ result: Result<[CommentModel]>) -> Void) {
         let resource = CommentsResource(postId: postId)
         requestManager.makeNetworkCall(using: resource) { (result: Result<[CommentModel]>) in
             switch result {
